@@ -1,6 +1,46 @@
-<!doctype html> <html ng-app="lematClient"> <head> <meta charset="utf-8"> <title>Le Mat Journal</title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> <link href="http://fonts.googleapis.com/css?family=Arimo:400" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"> <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"> <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css"> <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="styles/vendor.e30142d1.css"> <link rel="stylesheet" href="styles/main.2579c882.css"> </head> <body> <!--[if lte IE 8]>
+<!doctype html>
+<html ng-app="lematClient">
+
+<head>
+   <meta charset="utf-8">
+   <title>Le Mat Journal</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width">
+   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+   <link href='http://fonts.googleapis.com/css?family=Arimo:400' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   
+
+   <!-- build:css(.) styles/vendor.css -->
+   <!-- bower:css -->
+   <link rel="stylesheet" href="bower_components/angucomplete-alt/angucomplete-alt.css" />
+   <link rel="stylesheet" href="bower_components/angular-bootstrap-colorpicker/css/colorpicker.css" />
+   <link rel="stylesheet" href="bower_components/ng-tags-input/ng-tags-input.min.css" />
+   <link rel="stylesheet" href="bower_components/ng-tags-input/ng-tags-input.bootstrap.min.css" />
+   <link rel="stylesheet" href="bower_components/toastr/toastr.css" />
+   <!-- endbower -->
+   <!-- endbuild -->
+   <!-- build:css(.tmp) styles/main.css -->
+   <link rel="stylesheet" href="styles/main.css">
+   <!-- endbuild -->
+</head>
+
+<body>
+   <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> <lemat-header></lemat-header> <div ng-view=""></div> <lemat-footer></lemat-footer> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>! function (A, n, g, u, l, a, r) {
+    <![endif]-->
+   <lemat-header></lemat-header>
+   <div ng-view=""></div>
+   <lemat-footer></lemat-footer>
+
+   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+   <script>
+      ! function (A, n, g, u, l, a, r) {
          A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
                (A[l].q = A[l].q || []).push(arguments)
             }, A[l].l = +new Date, a = n.createElement(g),
@@ -8,4 +48,103 @@
       }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
       ga('create', 'UA-68259405-1', 'auto');
-      ga('send', 'pageview');</script> <script src="https://www.youtube.com/iframe_api"></script> <script src="angular-youtube-embed.js"></script> <script src="scripts/vendor.a3539d36.js"></script> <script src="scripts/scripts.776d385f.js"></script> </body> </html>
+      ga('send', 'pageview');
+   </script>
+   <script src="https://www.youtube.com/iframe_api"></script>
+   <script src="angular-youtube-embed.js"></script>
+   <!-- build:js(.) scripts/vendor.js -->
+   <!-- bower:js -->
+   <script src="bower_components/jquery/dist/jquery.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+   <script src="bower_components/angucomplete-alt/angucomplete-alt.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.min.js"></script>
+   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-cookies.min.js"></script>
+   <script src="bower_components/angular-filter/dist/angular-filter.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.min.js"></script>
+   <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-touch.min.js"></script>
+   <script src="bower_components/angular-validation-match/dist/angular-validation-match.min.js"></script>
+   <script src="bower_components/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.js"></script>
+   <script src="bower_components/angular-wysiwyg/src/angular-wysiwyg.js"></script>
+   <script src="bower_components/angularUtils-disqus/dirDisqus.js"></script>
+   <script src="bower_components/angularUtils-pagination/dirPagination.js"></script>
+   <script src="bower_components/re-tree/re-tree.js"></script>
+   <script src="bower_components/ng-device-detector/ng-device-detector.js"></script>
+   <script src="bower_components/ng-tags-input/ng-tags-input.min.js"></script>
+   <script src="bower_components/angular-social-links/angular-social-links.js"></script>
+   <script src="bower_components/aws-sdk/dist/aws-sdk.js"></script>
+   <script src="bower_components/toastr/toastr.js"></script>
+   <script src="bower_components/angular-deckgrid/angular-deckgrid.js"></script>
+   <script src="bower_components/angular-youtube-mb/src/angular-youtube-embed.js"></script>
+   <!-- endbower -->
+   <!-- endbuild -->
+
+   <!-- build:js({.tmp,app}) scripts/scripts.js -->   
+   <script src="scripts/app.js"></script>
+   
+   <!-- routes -->
+   <script src="scripts/config/admin.routes.js"></script>
+   <script src="scripts/config/client.routes.js"></script>
+   <script src="scripts/config/core.routes.js"></script>
+
+   <!--	contants -->
+   <script src="scripts/constants/constants.js"></script>
+
+   <!--	controllers -->
+   <script src="scripts/controllers/entries/entry.admin.controller.js"></script>
+   <script src="scripts/controllers/entries/entry.client.controller.js"></script>
+   <script src="scripts/controllers/issues/issue.admin.controller.js"></script>
+   <script src="scripts/controllers/issues/issue.client.controller.js"></script>
+   <script src="scripts/controllers/issues/issue.modal.admin.controller.js"></script>
+   <script src="scripts/controllers/main/main.controller.js"></script>
+   <script src="scripts/controllers/pieces/piece.admin.controller.js"></script>
+   <script src="scripts/controllers/pieces/piece.client.controller.js"></script>
+   <script src="scripts/controllers/posts/post.admin.controller.js"></script>
+   <script src="scripts/controllers/posts/post.client.controller.js"></script>
+   <script src="scripts/controllers/users/user.controller.js"></script>
+   <script src="scripts/controllers/users/user.modal.controller.js"></script>
+   <script src="scripts/controllers/admin/image.controller.js"></script>
+   <script src="scripts/controllers/admin/mail.controller.js"></script>
+   <script src="scripts/controllers/admin/submission.controller.js"></script>
+   <script src="scripts/controllers/admin/submission.modal.controller.js"></script>
+
+
+   <!--	directives -->
+   <script src="scripts/directives/file.directive.js"></script>
+   <script src="scripts/directives/fileselect.directive.js"></script>
+   <script src="scripts/directives/fileupload.directive.js"></script>
+   <script src="scripts/directives/footer.directive.js"></script>
+   <script src="scripts/directives/header.directive.js"></script>
+   <script src="scripts/directives/lemat-repeat.directive.js"></script>
+   <script src="scripts/directives/loading.directive.js"></script>
+   <script src="scripts/directives/ng-enter.directive.js"></script>
+   <script src="scripts/directives/ng-esc.directive.js"></script>
+   <script src="scripts/directives/scroll.directive.js"></script>
+   <script src="scripts/directives/scrollposition.directive.js"></script>
+
+   <!--	factories -->
+   <script src="scripts/factories/issueFactory.js"></script>
+   <script src="scripts/factories/imageFactory.js"></script>
+   <script src="scripts/factories/authFactory.js"></script>
+   <script src="scripts/factories/postFactory.js"></script>
+   <script src="scripts/factories/entryFactory.js"></script>
+   <script src="scripts/factories/userFactory.js"></script>
+   <script src="scripts/factories/as3Factory.js"></script>
+   <script src="scripts/factories/secFactory.js"></script>
+   <script src="scripts/factories/subFactory.js"></script>
+   <script src="scripts/factories/emailFactory.js"></script>
+   <script src="scripts/factories/pieceFactory.js"></script>
+
+   <!-- filters -->
+   <script src="scripts/filters/core.filters.js"></script>
+   
+   <!-- libs -->
+   <script src="scripts/libs/angularBootstrapColumnsSameHeight/angularBootstrapColumnsSameHeight.js"></script>
+   
+   <!-- endbuild -->
+</body>
+
+</html>
