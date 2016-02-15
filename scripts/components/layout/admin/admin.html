@@ -1,6 +1,11 @@
 <div class="contrast-bar">
-  <h3 class="section-title"><a ui-sref="admin.entries">NEWS</a> // <a ui-sref="admin.images">IMAGES</a> // <a ui-sref="admin.issues">ISSUES</a> // <a ui-sref="admin.email">MAIL</a> // <a ui-sref="admin.posts">POSTS</a> // <a ui-sref="admin.submissions">SUBMISSIONS</a> //
-     <a ui-sref="admin.users">USERS</a></h3>
+  <h3 class="section-title"><a (click)="adminCtrl.setData('entries')">NEWS</a> //
+    <a (click)="adminCtrl.setData('images')">IMAGES</a> //
+    <a (click)="adminCtrl.setData('issues')">ISSUES</a> //
+    <a (click)="adminCtrl.setData('email')">MAIL</a> //
+    <a (click)="adminCtrl.setData('posts')">POSTS</a> //
+    <a (click)="adminCtrl.setData('submissions')">SUBMISSIONS</a> //
+    <a (click)="adminCtrl.setData('users')">USERS</a></h3>
 </div>
 <hr>
-<div ui-grid="adminCtrl.gridOptions" class="grid"></div>
+<div ui-grid="adminCtrl.gridOptions" ui-grid-edit class="grid"></div>
